@@ -1,7 +1,11 @@
+import { useEffect } from "react"
 import Banner from "../../Components/Assets/Banner.png"
 import Profile from "../../Components/Assets/Profile.png"
 
 export default function AboutUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="sm:mt-[12vh] mt-[8vh]">
       <div className="w-full">

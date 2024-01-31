@@ -1,7 +1,11 @@
 import VisCard from "../../Components/Assets/VisCard.png"
 import ContactUsBanner from "../../Components/Assets/ContactUsBanner.png"
+import { useEffect } from "react"
 
 export default function ContactUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="sm:pt-[12vh] pt-[8vh] sm:h-[90vh] h-[94vh]">      
       <div className="relative h-full">

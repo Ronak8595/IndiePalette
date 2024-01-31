@@ -7,9 +7,13 @@ import Spring from "../../Components/Assets/Covers/Spring.png"
 import Texture from "../../Components/Assets/Covers/Texture.png"
 import Traditional from "../../Components/Assets/Covers/Traditional.png"
 import Tribal from "../../Components/Assets/Covers/Tribal.png"
+import { useEffect } from "react";
 
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="sm:mt-[12vh] mt-[8vh] bg-[#FFE9C7]">
       <div className="w-full">

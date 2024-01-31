@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom"
-// import Banner from "../../Components/Assets/Banner.png"
 import Product from "../../Components/Product/Product"
 import { data } from "../../Components/Assets/Data"
 
@@ -12,9 +11,6 @@ export default function Collections() {
   const category = wordsArray[0];
   return (
     <div className="sm:mt-[12vh] mt-[8vh]">
-      {/* <div className="w-full">
-        <img className="h-full w-full" src={Banner}/>
-      </div> */}
       <div className="bg-[#FFE9C7] text-[#5C0728] pb-[5%]">
         <div className="text-center px-[10%] sm:py-[1%] py-[3%]">
           <h1 className="font-rozha-one text-3xl sm:text-5xl py-[1.5%]">{List.title}</h1>

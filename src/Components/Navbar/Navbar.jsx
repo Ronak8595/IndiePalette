@@ -81,7 +81,8 @@ const Navbar = () => {
                     : ""
                 }`}
               >
-                <a href="#colls">Collections</a>
+                {/* <a href="#colls">Collections</a>/ */}
+                <Link to="/#colls">Collections</Link>
               </li>
               <li
                 className={`cursor-pointer ${
