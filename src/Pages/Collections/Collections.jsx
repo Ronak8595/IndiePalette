@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import Product from "../../Components/Product/Product"
 import { data } from "../../Components/Assets/Data"
+import { useEffect } from "react";
 
 export default function Collections() {
   const { name } = useParams();
@@ -9,6 +10,9 @@ export default function Collections() {
   const products = [...array].reverse();
   const wordsArray = List.title.split(' ');
   const category = wordsArray[0];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="sm:mt-[12vh] mt-[8vh]">
       <div className="bg-[#FFE9C7] text-[#5C0728] pb-[5%]">
