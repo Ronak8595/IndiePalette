@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuBurger } from "react-icons/ci";
-import "./Style.css";
 import Logo from "../Assets/Logo.png";
 import { useLocation } from "react-router-dom";
 
