@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: "samarkan";
+        src: url('./Components/Fonts/SAMAN___.ttf') format("truetype");
+    }
+}

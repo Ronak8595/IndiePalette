@@ -7,9 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'samarkan': ['Samarkan', 'sans-serif'],
+        'samarkan': ['samarkan', 'sans-serif'],
         'rozha-one': ['Rozha One', 'sans-serif'],
       },
+      
     },
   },
   plugins: [],
