@@ -21,27 +21,27 @@ const Navbar = () => {
     const content = (
         <>
             <div className="lg:hidden block absolute top-[8vh] w-full left-0 right-0 bg-[#5C0728] transition">
-                <ul className="text-center text-xl px-10 py-1">
+                <ul className="text-center text-xl px-10">
                     <li
-                        className="my-4 py-4 border-b border-[#5C0728] hover:bg-slate-800 hover:rounded"
+                        className="my-2 py-2 border-b border-[#5C0728] hover:bg-slate-800 hover:rounded"
                         onClick={handleClick}
                     >
                         <Link to="/">Home</Link>
                     </li>
                     <li
-                        className="my-4 py-4 border-b border-[#5C0728] hover:bg-slate-800 hover:rounded"
+                        className="my-2 py-2 border-b border-[#5C0728] hover:bg-slate-800 hover:rounded"
                         onClick={handleClick}
                     >
-                        <Link to="/collections">Collections</Link>
+                        <a href="/#colls">Collections</a>
                     </li>
                     <li
-                        className="my-4 py-4 border-b border-[#5C0728] hover:bg-slate-800 hover:rounded"
+                        className="my-2 py-2 border-b border-[#5C0728] hover:bg-slate-800 hover:rounded"
                         onClick={handleClick}
                     >
                         <Link to="/about">About Us</Link>
                     </li>
                     <li
-                        className="my-4 py-4 border-b border-[#5C0728] hover:bg-slate-800 hover:rounded"
+                        className="my-2 py-2 border-b border-[#5C0728] hover:bg-slate-800 hover:rounded"
                         onClick={handleClick}
                     >
                         <Link to="/contact">Contact Us</Link>
