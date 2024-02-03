@@ -14,7 +14,7 @@ export default function Collections() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="sm:mt-[12vh] mt-[8vh]">
+    <div id="colls" className="sm:mt-[12vh] mt-[8vh]">
       <div className="bg-[#FFE9C7] text-[#5C0728] pb-[5%]">
         <div className="text-center px-[10%] sm:py-[1%] py-[3%]">
           <h1 className="font-rozha-one text-3xl sm:text-5xl py-[1.5%]">{List.title}</h1>
