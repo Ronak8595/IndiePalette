@@ -60,57 +60,57 @@ function Display() {
     setActiveLink('bg01');
   }
   return (
-    <div className="sm:pt-[12vh] pt-[8vh] h-[90vh] bg-[#FFE9C7]">
+    <div className="sm:pt-[12vh] pt-[8vh] sm:h-[90vh] h-[94vh] bg-[#FFE9C7]">
       <div className="h-full">
-        <div className=" w-3/4 mx-auto flex py-[2%] gap-[1.5%] h-full">
-          <div className="w-[5%]">
+        <div className="sm:w-3/4 w-[85%] mx-auto sm:flex sm:py-[2%] py-[5%] sm:gap-[1.5%] h-full">
+          <div className="w-[5%] sm:block hidden">
             <Link to={"/collections/" + name}>
               <GoMoveToStart className="text-4xl"/>
             </Link>
           </div>
-          <div className="w-[40%]">
-            <div className="border-2 border-black w-full h-full flex gap-[3%] p-[2%]">
-              <div className="">
+          <div className="sm:w-[40%] sm:h-full h-[65%]">
+            <div className="border-2 border-black w-full h-full flex sm:justify-between p-[2%] flex-col sm:flex-row">
+              <div className="sm:h-full h-[83%]">
                 <img
-                  className="w-full h-full object-cover border-2 border-black "
+                  className="w-full h-full object-cover border-2 border-black"
                   src={displayImage}
                   alt=""
                 />
               </div>
-              <div className="flex flex-col justify-between px-[4%]">
-                  <div className="w-24 h-24 rounded-full overflow-hidden" onClick={handleColor01}>
-                    <div>
-                      <img src={productData[0].OutletImage} alt="" className="w-full h-full scale-125 translate-y-4" />
+              <div className="flex sm:flex-col flex-row sm:mt-0 mt-[2%] justify-between sm:pl-[2%] sm:h-full h-[15%]">
+                  <div className="sm:w-24 sm:h-24 w-auto rounded-full overflow-hidden m-[0.5%]" onClick={handleColor01}>
+                    <div className="h-fit">
+                      <img src={productData[0].OutletImage} alt="" className="w-full h-full scale-125 sm:translate-y-4 translate-y-2" />
                     </div>
                   </div>
-                  <div className="w-24 h-24 rounded-full overflow-hidden" onClick={handleColor02}>
-                    <div>
-                      <img src={productData[1].OutletImage} alt="" className="w-full h-full scale-125 translate-y-4" />
+                  <div className="sm:w-24 sm:h-24 w-auto rounded-full overflow-hidden m-[0.5%]" onClick={handleColor02}>
+                    <div className="h-fit">
+                      <img src={productData[1].OutletImage} alt="" className="w-full h-full scale-125 sm:translate-y-4 translate-y-2" />
                     </div>                  
                   </div>
-                  <div className="w-24 h-24 rounded-full overflow-hidden" onClick={handleColor03}>
-                    <div>
-                      <img src={productData[2].OutletImage} alt="" className="w-full h-full scale-125 translate-y-4" />
+                  <div className="sm:w-24 sm:h-24 w-auto rounded-full overflow-hidden m-[0.5%]" onClick={handleColor03}>
+                    <div className="h-fit">
+                      <img src={productData[2].OutletImage} alt="" className="w-full h-full scale-125 sm:translate-y-4 translate-y-2" />
                     </div>
                   </div>
-                  <div className="w-24 h-24 rounded-full overflow-hidden" onClick={handleColor04}>
-                    <div>
-                      <img src={productData[3].OutletImage} alt="" className="w-full h-full scale-125 translate-y-4" />
+                  <div className="sm:w-24 sm:h-24 w-auto rounded-full overflow-hidden m-[0.5%]" onClick={handleColor04}>
+                    <div className="h-fit">
+                      <img src={productData[3].OutletImage} alt="" className="w-full h-full scale-125 sm:translate-y-4 translate-y-2" />
                     </div>
                   </div>
-                  <div className="w-24 h-24 rounded-full overflow-hidden" onClick={handleColor05}>
-                    <div>
-                      <img src={productData[4].OutletImage} alt="" className="w-full h-full scale-125 translate-y-4" />
+                  <div className="sm:w-24 sm:h-24 w-auto rounded-full overflow-hidden m-[0.5%]" onClick={handleColor05}>
+                    <div className="h-fit">
+                      <img src={productData[4].OutletImage} alt="" className="w-full h-full scale-125 sm:translate-y-4 translate-y-2" />
                     </div>
                   </div>
               </div>
             </div>
           </div>
-          <div className=" w-[45%] flex flex-col justify-between ">
+          <div className="sm:w-[45%] flex sm:flex-col flex-col-reverse justify-between sm:h-full h-[35%] sm:pt-0 pt-[5%]">
             <div>
-              <h3 className="font-rozha-one text-4xl text-[#5C0728]">Doraemon</h3>
-              <h4 className=" text-2xl text-[#5C0728]">KID06</h4>
-              <p className="mt-10 text-xl text-[#5C0728]">
+              <h3 className="font-rozha-one sm:text-4xl text-2xl text-[#5C0728]">Doraemon</h3>
+              <h4 className="sm:text-2xl text-sm text-[#5C0728]">KID06</h4>
+              <p className="sm:mt-10 sm:text-xl text-sm text-[#5C0728]">
                 From whimsical animal-shaped lamps to dreamy nightlights adorned
                 with stars and moon motifs, our Kids Collection of lamps adds a
                 touch of magic and wonder to any space, creating a cozy ambiance
@@ -118,24 +118,24 @@ function Display() {
                 life.
               </p>
             </div>
-            <div className="flex gap-6 -mb-2 ">
-              <div className={`p-2 border-black ${activeLink === 'bg01' ? 'border-2' : ''}`} onClick={handleBg01}>
+            <div className="flex sm:gap-6 gap-1 sm:-mb-2 flex-start">
+              <div className={`sm:p-2 p-1 h-full border-black ${activeLink === 'bg01' ? 'border-2' : ''}`} onClick={handleBg01}>
                 <img
-                  className="w-[142px] h-[187px] object-cover border-2 border-black "
+                  className="sm:w-[142px] sm:h-[187px] h-[70px] object-cover border-2 border-black "
                   src={bg01}
                   alt=""
                 />
               </div>
-              <div className={`p-2 border-black ${activeLink === 'bg02' ? 'border-2' : ''}`} onClick={handleBg02}>
+              <div className={`sm:p-2 p-1 h-full border-black ${activeLink === 'bg02' ? 'border-2' : ''}`} onClick={handleBg02}>
                 <img
-                  className="w-[142px] h-[187px] object-cover border-2 border-black "
+                  className="sm:w-[142px] sm:h-[187px] h-[70px] object-cover border-2 border-black "
                   src={bg02}
                   alt=""
                 />
               </div>
-              <div className={`p-2 border-black ${activeLink === 'bg03' ? 'border-2' : ''}`} onClick={handleBg03}>
+              <div className={`sm:p-2 p-1 h-full border-black ${activeLink === 'bg03' ? 'border-2' : ''}`} onClick={handleBg03}>
                 <img
-                  className="w-[142px] h-[187px] object-cover border-2 border-black "
+                  className="sm:w-[142px] sm:h-[187px] h-[70px] object-cover border-2 border-black "
                   src={bg03}
                   alt=""
                 />
