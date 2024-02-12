@@ -5,6 +5,7 @@ import ABS04 from "../Abstract/ABS04.png"
 import ABS05 from "../Abstract/ABS05.png"
 import ABS06 from "../Abstract/ABS06.png"
 import { ABS01Data } from "../Abstract/ABS01/ABS01Data"
+import { ABS02Data } from "../Abstract/ABS02/ABS02Data"
 
 export const AbstractData = {
     ABS01 : {
@@ -17,6 +18,7 @@ export const AbstractData = {
         id : "ABS02",
         name : "Red in Gold",
         image : ABS02,
+        data : ABS02Data,
     },
     ABS03 : {
         id : "ABS03",
